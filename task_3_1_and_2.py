@@ -14,9 +14,9 @@ def num_translate_adv(num):
     }
     if num.islower() == True:
         return nums_translate.get(num.lower()).lower()
-    if num.isupper() == True:
+    elif num.isupper() == True:
         return nums_translate.get(num.lower()).upper()
-    if num.istitle() == True:
+    elif num.istitle() == True:
         return nums_translate.get(num.lower()).title()
 
 num = input('Введите число прописью на английском: ')
